@@ -1,0 +1,98 @@
+.dev {
+  border: 1px solid tomato !important;
+}
+
+.my-active,
+.my-cursor {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.no-selection {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: all 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  transition-delay: 0.5s;
+}
+
+.x-modal-lg {
+  min-width: 90vw;
+}
+
+.x-modal-md {
+  min-width: 95vw;
+
+  @media screen and (min-width: 768px) {
+    min-width: 45vw;
+  }
+  @media screen and (min-width: 668px) {
+    min-width: 55vw;
+  }
+}
+
+// .grid {
+//   display: grid;
+// }
+
+// .center-content {
+//   @extend .grid;
+//   place-content: center;
+// }
+
+// .left-content {
+//   @extend .grid;
+//   place-content: start;
+// }
+
+// .right-content {
+//   @extend .grid;
+//   place-content: end;
+// }
+
+// .max--md {
+//   width: 100%;
+//   max-width: 800px !important;
+// }
+
+// .center {
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+$iconSizes: (
+  'sm': 0.5rem,
+  'md': 1rem,
+  'lg': 1.5rem
+);
+
+@each $name, $size in $iconSizes {
+  .icon__#{$name} {
+    font-size: $size;
+  }
+}
